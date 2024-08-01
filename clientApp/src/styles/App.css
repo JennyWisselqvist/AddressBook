@@ -1,0 +1,248 @@
+@import "~bootstrap-icons/font/bootstrap-icons.css";
+
+.App {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: wheat;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.App-header {
+    background-color: #282c34;
+    padding: 20px;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 800px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    color: #61dafb;
+}
+
+input {
+    display: block;
+    width: 100%;
+    padding: 10px 0 10px 0;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.headerContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    margin-bottom: 1px;
+}
+
+.headerText {
+    font-size: 2rem;
+    color: #61dafb;
+    flex: 1;
+    text-align: center;
+}
+
+button {
+    background-color: #61dafb;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+    button:hover {
+        background-color: #4fa3b6;
+    }
+
+.backButton {
+    background-color: #61dafb;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    color: #61dafb;
+}
+
+li {
+    padding: 10px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #282c34;
+    padding: 1rem;
+}
+
+    nav ul {
+        display: flex;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        align-items: center;
+    }
+
+    nav li {
+        margin: 0 20px; 
+        position: relative;
+    }
+
+        nav li:not(:last-child)::after {
+            content: '';
+            position: absolute;
+            right: -20px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 2px;
+            height: 30px;
+            background-color: #61dafb; 
+        }
+
+    nav a {
+        color: #61dafb;
+        text-decoration: none;
+        font-size: 1.2rem;
+        display: block;
+        padding: 10px;
+        border-radius: 4px;
+    }
+
+        nav a:hover {
+            color: #4fa3b6;
+        }
+
+/* Contact form */
+.contactForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+    .contactForm form {
+        width: 100%;
+        max-width: 450px;
+        border-radius: 4px;
+    }
+    .contactForm input {
+        margin: 20px 0px 20px 0px;
+        font-size: 1rem;
+        padding: 12px;
+    }
+
+
+    .contactForm button {
+        background-color: #61dafb;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 1rem;
+    }
+
+        .contactForm button:hover {
+            background-color: #4fa3b6;
+        }
+
+
+/* Contact list*/
+.contact-item {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.contact-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #ddd;
+}
+
+.contact-name {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.contact-details {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 0.5rem;
+    padding: 0.5rem;
+    border-radius: 4px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+}
+
+.contact-item.open .contact-details {
+    max-height: 500px;
+}
+
+.UpdateBtn, .DeleteBtn {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.UpdateBtn {
+    color: #61dafb;
+    padding: 5px 10px;
+}
+
+    .UpdateBtn:hover {
+        color: #4fa3b6;
+    }
+
+.DeleteBtn {
+    color: #61dafb;
+    font-size: 1.2rem;
+}
+
+    .DeleteBtn:hover {
+        color: #4fa3b6;
+    }
+
+.searchBarContainer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 3rem;
+}
+
+.searchBar {
+    width: 55%;
+    max-width: 500px;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+}
+
+
+
